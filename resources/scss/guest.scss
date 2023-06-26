@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap';
+
+header{
+  height: 70px;
+}
+
+main{
+  min-height: calc(100vh - 70px);
+}
+
+.text-muted{
+  color: white !important;
+}
