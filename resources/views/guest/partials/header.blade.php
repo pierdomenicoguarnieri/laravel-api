@@ -17,6 +17,10 @@
           <li class="nav-item">
             <a href="{{route('projects')}}" class="nav-link {{Route::currentRouteName() === 'projects' ? 'active' : ''}}">Lista dei progetti</a>
           </li>
+
+          <li class="nav-item">
+            <a href="{{route('vue')}}" class="nav-link {{Route::currentRouteName() === 'vue' ? 'active' : ''}}">Index Vue</a>
+          </li>
         </ul>
       </div>
     </div>

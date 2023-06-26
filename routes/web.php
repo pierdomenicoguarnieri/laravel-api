@@ -25,6 +25,8 @@ Route::get('/progetti', [PageController::class, 'projects'])->name('projects');
 
 Route::get('/progetto/{slug}', [PageController::class, 'project'])->name('project');
 
+Route::get('/vue', [PageController::class, 'vue'])->name('vue');
+
 
 
 Route::middleware(['auth', 'verified'])

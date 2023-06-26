@@ -21,4 +21,8 @@ class PageController extends Controller
     $project = Project::where('slug', $slug)->first();
     return view('guest.project', compact('project'));
   }
+
+  public function vue(){
+    return view('guest.vue');
+  }
 }
