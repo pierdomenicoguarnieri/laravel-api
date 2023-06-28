@@ -43,7 +43,20 @@ class ProjectController extends Controller
   }
 
   public function getProject($slug){
-    $projects = Project::where('slug', $slug)->with('type', 'technologies')->first();
+    $project = Project::where('slug', $slug)->with('type', 'technologies')->first();
+
+    if($project->image_path){
+        $project->image_path = asset('storage/' . $project->image_path);
+    } else{
+        $project->image_path = asset('img/no-image.jpg');
+        $project->image_original_name = 'No Image';
+    }
+
+    return response()->json($project);
+  }
+
+  public function search($title){
+    $projects = Project::where('title', 'like', "%$title%")->with('type', 'technologies')->paginate(15);
 
     return response()->json($projects);
   }

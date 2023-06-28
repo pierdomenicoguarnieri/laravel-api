@@ -143,8 +143,8 @@
       <label for="finished" class="form-label">Stato del progetto</label>
       <select class="form-select @error('finished') is-invalid @enderror" id="finished" name="finished">
         <option selected>Scegli una opzione</option>
-        <option value="1" @if($project->finished) selected @endif>Terminato</option>
-        <option value="0" @if(!$project->finished) selected @endif>Non Terminato</option>
+        <option value="1" @if($project?->finished) selected @endif>Terminato</option>
+        <option value="0" @if(!$project?->finished) selected @endif>Non Terminato</option>
       </select>
       @error('finished')
         <span class="text-danger">{{$message}}</span>
