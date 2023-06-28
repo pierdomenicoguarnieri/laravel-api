@@ -41,4 +41,10 @@ class ProjectController extends Controller
 
     return response()->json($technologies);
   }
+
+  public function getProject($slug){
+    $projects = Project::where('slug', $slug)->with('type', 'technologies')->first();
+
+    return response()->json($projects);
+  }
 }
