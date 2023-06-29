@@ -34,7 +34,14 @@ Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visuali
 Aggiungere il router a Vue e inserite  un menu di navigazione fra le pagine.
 
 Solo una delle pagine farà la chiamata axios per stampare il portfolio.
+
 Aggiungere un elenco di  bottoni per i tipi e le tecnologie, Questi bottoni verranno stampati a seguito di chiamate axios dedicate.
+
+### **Milestone 7**
+
+Riprodurre tutto il flusso dell’invio della email dal form della pagina di contatti utilizzando mailtrap.io.
+
+Gestire il feedback da dare all’utente (success/errori) tramite API.
 
 ### **Bonus 1:**
 
