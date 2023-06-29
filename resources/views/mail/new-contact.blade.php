@@ -2,8 +2,8 @@
 <p>
     Hei ricevuto un nuovo messaggio : <br>
 
-    <p>Nome : <span>{{ $lead->name}}</span></p>
-    <p>Email : <span>{{ $lead->name}}</span></p>
+    <p>Nome : <span>{{ $lead->title}}</span></p>
+    <p>Email : <span>{{ $lead->email}}</span></p>
     <p>Messaggio :</p>
     <p>{{ $lead->message }}</p>
 
